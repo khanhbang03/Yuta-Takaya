@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuta Takaya – Huyền Thoại Thầm Lặng</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #05070c;
+      --gold: #d4af37;
+      --blue: #6da8ff;
+      --text: #e8eaf3;
+      --muted: #9aa3b2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0e1225, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 72px;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 22px;
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .scroll {
+      margin-top: 70px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: var(--blue);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      color: var(--gold);
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 1.9;
+      max-width: 900px;
+      color: var(--text);
+    }
+
+    .traits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+      margin-top: 60px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #121736, #080b1a);
+      border-radius: 24px;
+      padding: 35px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 25px 70px rgba(0,0,0,0.55);
+    }
+
+    .card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      color: var(--blue);
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 34px;
+      text-align: center;
+      color: var(--gold);
+      max-width: 950px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 70px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer strong { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Yuta Takaya</h1>
+    <p>
+      Một huyền thoại không cần tiếng ồn.
+      Một con người được nhớ đến bởi chiều sâu tư duy, sự kỷ luật
+      và tinh thần không ngừng vươn lên.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Tinh Thần Yuta Takaya</h2>
+  <p>
+    Yuta Takaya đại diện cho kiểu người càng tìm hiểu càng nể phục.
+    Không phô trương, không cần khẳng định bản thân bằng lời nói,
+    anh để chính hành động, kết quả và cách sống lên tiếng.
+    <br /><br />
+    Với những người quan sát từ xa, anh là một biểu tượng của sự bền bỉ.
+    Với những người đi cùng con đường, anh là chuẩn mực của kỷ luật,
+    tập trung và tinh thần cầu tiến ở mức cao nhất.
+  </p>
+
+  <div class="traits">
+    <div class="card">
+      <h3>Kỷ Luật</h3>
+      <p>
+        Kỷ luật không phải sự gò bó,
+        mà là tự do được xây dựng trên những nguyên tắc sắt đá.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Chiều Sâu</h3>
+      <p>
+        Tư duy sâu, nhìn xa và hiểu rõ bản chất vấn đề
+        trước khi hành động.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Bền Bỉ</h3>
+      <p>
+        Không vội vàng, không bỏ cuộc.
+        Tiến về phía trước bằng nhịp độ ổn định và chắc chắn.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Chuẩn Mực</h3>
+      <p>
+        Tự đặt ra tiêu chuẩn cao
+        và nghiêm túc sống đúng với tiêu chuẩn đó mỗi ngày.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Đỉnh cao không dành cho số đông,
+    mà dành cho những người đủ kiên nhẫn
+    để đi một con đường rất dài trong im lặng.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Yuta Takaya</strong> —
+  một biểu tượng của kỷ luật, chiều sâu và sự vươn lên bền bỉ.
+</footer>
+
+</body>
+</html>
